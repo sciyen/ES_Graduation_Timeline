@@ -44,5 +44,5 @@ app.get("/modify", function(req, res){
         })
     }
     console.log(display_list);
-    res.send('<script>alert("Modify success!")</script>');
+    res.send("Now playing: #" + display_list[0] + " " + json_name[display_list[0]]["Teacher"] + "\n" + json_name[display_list[0]]["Student"]["a"] + "\n" + json_name[display_list[0]]["Student"]["b"]);
 })

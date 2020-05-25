@@ -17,8 +17,9 @@ $(document).ready(()=>{
                 method: "get",
                 url: "./modify?remove="+last_one,
                 success: function(data){
-                    $("#info").text(last_one + " remove successfully");
+                    $("#info").text("#" + last_one + " remove successfully");
                     console.log("Remove" + key);
+                    $("#now_playing").text(data);
                 }
             })
         }
@@ -34,6 +35,7 @@ $(document).ready(()=>{
             success: function(data){
                 $("#info").text(last_one + "Undo successfully");
                 console.log("Undo " + last_one);
+                $("#now_playing").text(data);
             }
         })
     })
