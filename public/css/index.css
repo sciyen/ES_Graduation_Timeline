@@ -1,3 +1,13 @@
+@media (max-width: 460px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 12px;
+  }
+}
 body{
     background-color:#393E46;
     color:#EEEEEE;
@@ -22,7 +32,7 @@ body{
 #state_card{
     margin:0;
     margin-right:2%;
-    font-size:2em;
+    font-size:2rem;
     text-align:center;
     background-color:#F38181;
 }
@@ -63,13 +73,13 @@ body{
     }
 }
 .card_title{
-    font-size:2.5em;
+    font-size:1.5rem;
     text-align:center;
     background-color:#222831;
     padding:0.1em 0.1em;
 }
 .card_content{
-    font-size:2em;
+    font-size:1rem;
     background-color:#00ADB5;
     padding:0.2em 0.2em;
 }
@@ -81,6 +91,7 @@ body{
 }
 .bachelor{
     background-color:#3D84A8;
+    text-align:left;
 }
 .master{
     background-color:#3D84A8;
